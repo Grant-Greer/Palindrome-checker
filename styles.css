@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color: rgb(97, 164, 219);
+    color: white
+  }
+
+.container {
+      height: 70vh;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+h1 {
+        font-size: 3rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+  }
+
+  @keyframes moveInLeft {
+      0% {
+          opacity: 0;
+          transform: translateX(-100px);
+      }
+
+      80% {
+          transform: translateX(20px);
+      }
+
+      100% {
+          opactiy: 1;
+          transform: translate(0);
+      }
+  }
